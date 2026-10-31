@@ -16,7 +16,6 @@ def search_tool(query: str) -> str:
     try:
         return _search.invoke(query) or "No results found."
     except Exception as e:
-        # crash ki jagah error text return, taaki agent aage badh sake
         return f"Web search failed: {e}"
 
 
